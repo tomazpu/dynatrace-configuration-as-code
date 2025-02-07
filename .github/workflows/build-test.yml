@@ -72,6 +72,7 @@ jobs:
       - name: download artifact (main.breakdown)
         id: download-main-breakdown
         uses: dawidd6/action-download-artifact@v8
+        continue-on-error: true
         with:
           branch: main
           workflow_conclusion: success
